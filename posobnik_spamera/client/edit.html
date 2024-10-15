@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>editing</title>
+
+</head>
+<body>
+
+<!-- header with menu bar -->
+<header>
+  <nav>
+    <div class="navbar">
+      <a class=" head-link">Пособник спамера</a>
+      <a class=" head-link">Rom-chik</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- main body section -->
+<section>
+  <div class="row"> <!-- main section, padding, wrap -->
+    <container class="main"> <!-- flex to main section -->
+
+      <div class="menu-bar"> <!-- header of main content -->
+        <h1>Edit</h1>
+
+        <button id="add-object" class="butt butt--black hidden" >
+          Add new object
+        </button>
+        <div></div>
+      </div>
+
+      <div  class="body--content rounded-border"> <!-- main content -->
+        <div id="container-add" class="select-track"> <!-- header of the main content -->
+          <img class="png-s-icons" src="images/icons8-triangle-arrow-24.png" alt="triangle arrow list"/>
+          <h3 class="common-text">List {id, name, surname, email}</h3>
+        </div>
+
+        <!--<div class="content">
+            <div class="inside&#45;&#45;content rounded-border">
+                <div class="left&#45;&#45;content">
+                    <img class="png-m-icons" src="images/icons8-path-white-50.png" alt="path"/>
+                    <p>Roman Antoshchuk romchik2mail.com@gmail.com</p>
+                </div>
+                <button class="butt butt&#45;&#45;blue">Edit</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="inside&#45;&#45;content rounded-border">
+                <div class="left&#45;&#45;content">
+                    <img class="png-m-icons" src="images/icons8-path-white-50.png" alt="path"/>
+                    <p>Kirilo Sirenko kyrius35hoho8@gmail.com</p>
+                </div>
+                <button class="butt butt&#45;&#45;blue">Edit</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="inside&#45;&#45;content rounded-border">
+                <div class="left&#45;&#45;content">
+                    <img class="png-m-icons" src="images/icons8-path-white-50.png" alt="path"/>
+                    <p>Taras Dovbyk tarasenko4ny@gmail.com</p>
+                </div>
+                <button class="butt butt&#45;&#45;blue">Edit</button>
+            </div>
+        </div>-->
+
+      </div>
+
+
+      <div id="form" class="body--content content rounded-border form">
+        <strong>Add user to Database: </strong>
+        <div>
+          <label class="form-label">Name:</label>
+          <input id="nameInput" type="text"/>
+        </div>
+        <div>
+          <label class="form-label">Surname:</label>
+          <input id="surnameInput" type="text"/>
+        </div>
+        <div>
+          <label class="form-label">Email:</label>
+          <input id="emailInput" type="text"/>
+        </div>
+        <input id="editUserButton--${currentID}" class="butt butt--black" type="submit" value="Submit"/>
+      </div>
+
+    </container>
+
+
+    <container class="sidebar">
+      <!-- sidebar -->
+      <div class="rounded-border content__4"> <!-- main content -->
+        <a href="lobby.html" class="select-track"> <!-- header of the main content -->
+          <img class="png-s-icons" src="images/icons8-triangle-arrow-24.png" alt="triangle arrow list"/>
+          <h3 class="rotate">Back</h3>
+        </a>
+      </div>
+    </container>
+  </div>
+
+</section>
+
+
+<!-- footer -->
+<footer>
+  <nav>
+    <div class="main-footer">
+
+      <div class="social row">
+        <a class="logo" href="#">
+          <h4>PosobnikSpamera</h4>
+        </a>
+        <div> <!-- social media logos-->
+          <a href="https://github.com/Rom-chik">
+            <img class="png-l-icons" src="images/icons8-github-50.png"/>
+          </a>
+          <a href="#">
+            <img class="png-l-icons" src="images/icons8-teams-50.png"/>
+          </a>
+          <a href="#">
+            <img class="png-l-icons" src="images/icons8-university-50.png"/>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="frontEnd.js"></script>
+</body>
+</html>

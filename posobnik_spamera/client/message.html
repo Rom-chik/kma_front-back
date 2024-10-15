@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>message send</title>
+
+</head>
+<body>
+
+<!-- header with menu bar -->
+<header>
+    <nav>
+        <div class="navbar">
+            <a class=" head-link">Пособник спамера</a>
+            <a class=" head-link">Rom-chik</a>
+        </div>
+    </nav>
+</header>
+
+
+<!-- main body section -->
+<section>
+    <div class="row"> <!-- main section, padding, wrap -->
+        <container class="main"> <!-- flex to main section -->
+
+            <div class="menu-bar"> <!-- header of main content -->
+                <h1>Delete user</h1>
+
+                <div>
+
+                </div>
+                <button id="add-object" class="butt butt--black hidden" >
+                    Send mails
+                </button>
+            </div>
+
+            <div  class="body--content rounded-border"> <!-- main content -->
+                <div id="container-add" class="select-track"> <!-- header of the main content -->
+                    <img class="png-s-icons" src="images/icons8-triangle-arrow-24.png" alt="triangle arrow list"/>
+                    <h3 class="common-text">List {id, name, surname, email}</h3>
+                </div>
+
+                <div class="content">
+                    <div class="inside--content rounded-border background--green">
+                        <div id="text--1" class="left--content">
+                            <img class="png-m-icons" src="images/icons8-path-white-50.png" alt="path"/>
+                            <p>Welcome! You are in Database now and this random message <br> is sent to all database users here.</p>
+                        </div>
+                        <button id="send-mail--1" class="butt butt--black">Send mail</button>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inside--content rounded-border background--green">
+                        <div id="text--2" class="left--content">
+                            <img class="png-m-icons" src="images/icons8-path-white-50.png" alt="path"/>
+                            <p>If your received this email, then.. university educational <br> task done properly!</p>
+                        </div>
+                        <button id="send-mail--2" class="butt butt--black">Send mail</button>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inside--content rounded-border background--green">
+                        <div id="text--3" class="left--content">
+                            <img class="png-m-icons" src="images/icons8-path-white-50.png" alt="path"/>
+                            <p>Random message was sent to you by nodemailer example <br> program on educational purposes.</p>
+                        </div>
+                        <button id="send-mail--3" class="butt butt--black">Send mail</button>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inside--content rounded-border background--green">
+                        <div id="text--4" class="left--content">
+                            <textarea id="" class="written-text background--green" type="text">Write your text here!</textarea>
+                        </div>
+                        <button id="send-mail-custom" class="butt butt--black">Send mail</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </container>
+
+
+        <container class="sidebar">
+            <!-- sidebar -->
+            <div class="rounded-border content__4 content__4__message"> <!-- main content -->
+                <a href="lobby.html" class="select-track"> <!-- header of the main content -->
+                    <img class="png-s-icons" src="images/icons8-triangle-arrow-24.png" alt="triangle arrow list"/>
+                    <h3 class="rotate">Back</h3>
+                </a>
+            </div>
+        </container>
+    </div>
+
+</section>
+
+
+<!-- footer -->
+<footer>
+    <nav>
+        <div class="main-footer">
+
+            <div class="social row">
+                <a class="logo" href="#">
+                    <h4>PosobnikSpamera</h4>
+                </a>
+                <div> <!-- social media logos-->
+                    <a href="https://github.com/Rom-chik">
+                        <img class="png-l-icons" src="images/icons8-github-50.png"/>
+                    </a>
+                    <a href="#">
+                        <img class="png-l-icons" src="images/icons8-teams-50.png"/>
+                    </a>
+                    <a href="#">
+                        <img class="png-l-icons" src="images/icons8-university-50.png"/>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="messageSend.js"></script>
+</body>
+</html>
