@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>client Thick_client</title>
+</head>
+
+<body>
+
+<header>
+    <div class="header-center--client">
+        <a href="admin.html" class="rounded-border--top color--2--client">
+            <div id="service-switch--client" class="service-switch">
+                change to Admin interface
+            </div>
+        </a>
+        <div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="page-center">
+    <div class="page">
+        <div class="content--left ">
+
+            <div class="content color--client rounded-border">
+                <h2>Add certificate</h2>
+                <div class="form">
+                    <label for="name">name:</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="surname">surname:</label><br>
+                    <input type="text" id="surname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email"><br>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date" min="1914" max="2023"><br><br>
+
+                    <button id="addNewUserButton" class="pointer button--white">Add certificate</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content--right">
+            <div id="app" class="content color--client rounded-border">
+                <h2>Table</h2>
+                <table>
+                    <tr id="add-to-table">
+                        <th>id</th>
+                        <th>name</th>
+                        <th>surname</th>
+                        <th>email</th>
+                        <th>date</th>
+                    </tr>
+                    <tr v-for="item in items" :key="item._id">
+                        <td>{{ item._id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.surname }}</td>
+                        <td>{{ item.email }}</td>
+                        <td>{{ formatDate(item.date) }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-center--client">
+        <div>
+
+        </div>
+        <div id="footer-switch--client" class="rounded-border--bottom color--2--client service-switch--footer">
+            <div id="insert-birthday-notification">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="clientFront.js"></script>
+</body>
+
+</html>

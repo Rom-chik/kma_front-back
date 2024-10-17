@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+    /*background-image: url("images/background-colorful.png");*/
+
+}
+a{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+
+.lobby {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+}
+.lobby-content {
+    text-align: center;
+    padding: 30px;
+}
+.entry-link {
+    display: flex;
+}
+.lobby-logo {
+    padding-top: 100px;
+    display: flex;
+    font: 8rem 'AmstelvarAlpha', sans-serif;
+    font-style: oblique 23deg;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+                                    /*header*/
+header {
+    position: sticky;
+    top: 0;
+}
+.header-center--lobby {
+    padding: 0px 30px 0px 30px;
+    min-height: 5vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+}
+.header-center--client {
+    padding: 0px 30px 0px 30px;
+    min-height: 5vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+}
+.header-center--admin {
+    padding: 0px 30px 0px 30px;
+    min-height: 5vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+}
+.service-switch {
+    text-align: center;
+    color: white;
+}
+
+
+                                    /*body content*/
+.page-center {
+    /*border: 2px solid black;*/
+    padding: 30px;
+    min-height: 70vh;
+}
+.page {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+}
+.content--left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content--right {
+
+}
+.content {
+    padding: 20px 30px 30px 20px;
+    /*border: 2px solid green;*/
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+th {
+    height: 55px;
+    font-size: 20px;
+}
+td {
+    height: 45px;
+}
+
+.form {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    padding: 30px 0;
+}
+input {
+    /*background-color: #1ebbd7;*/
+    border: 0px;
+    border-bottom: 1px solid white;
+    height: 30px;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+                                    /*footer*/
+footer {
+    min-height: 18vh;
+}
+.footer-center--lobby {
+    padding: 0px 30px 0px 30px;
+    min-height: 18vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 30% 65%;
+    gap: 5%;
+}
+.footer-center--client {
+    padding: 0px 30px 0px 30px;
+    min-height: 18vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+}
+.footer-center--admin {
+    padding: 0px 30px 0px 30px;
+    min-height: 18vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20% 75%;
+    gap: 5%;
+}
+.footer-logo {
+    display: flex;
+    gap: 16px;
+    font: 2rem 'AmstelvarAlpha', sans-serif;
+    font-style: oblique 23deg;
+    color: black;
+    align-items: center;
+}
+.service-switch--footer {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+.birthday-alert {
+    display: flex;
+    color: white;
+}
+
+
+                                    /*wide spectrum of styles*/
+.rounded-border {
+    border-radius: 10px;
+}
+.rounded-border--bottom {
+    border-radius: 10px 10px 0px 0px;
+}
+.rounded-border--top {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.button--white {
+    background-color: white;
+    border: 0px;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+}
+.button--white:hover {
+    background-color: #DFDFDF;
+}
+
+.button--white--border{
+    background: transparent;
+    border: 1px solid white;
+}
+.button--white--border:hover {
+    cursor: pointer;
+}
+.button--noborder {
+    background: transparent;
+    cursor: pointer;
+    border: 0px;
+}
+
+
+.color--client {
+    /*background-color: #1ebbd7;*/
+    background-color: #C9F7FC;
+}
+.color--admin {
+    /*background-color: #960000;*/
+    background-color: #bfbfbf;
+    /*background-color: #C59A9A;*/
+}
+.color--2--client {
+    background-color: #107DAC;
+}
+.color--2--admin {
+    background-color: #640000;
+}
+
+
+.icon--small {
+    height: 24px;
+}
+.icon--mail{
+    height: 24px;
+}
+.icon--mail:hover {
+    height: 30px;
+}
